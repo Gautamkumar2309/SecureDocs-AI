@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Secrets
+.env
+
+# Uploaded user documents
+uploads/
+
+# Test cache
+.coverage
+htmlcov/
