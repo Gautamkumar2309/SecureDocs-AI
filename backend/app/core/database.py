@@ -1,4 +1,4 @@
-
+print("DATABASE: starting import", flush=True)
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
