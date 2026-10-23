@@ -7,16 +7,22 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import Base, engine
 
 # API routers
+print("MAIN: importing auth", flush=True)
 from app.api.auth import router as auth_router
+print("MAIN: importing users", flush=True)
 from app.api.users import router as users_router
+print("MAIN: importing admin", flush=True)
 from app.api.admin import router as admin_router
+print("MAIN: importing documents", flush=True)
 from app.api.documents import router as documents_router
+print("MAIN: importing models", flush=True)
 from app.models.documents import Document
 from app.models.document_chunk import DocumentChunk
 
 # Import models so SQLAlchemy registers their tables
 from app.models.user import User
 from app.models.refresh_token import RefreshToken
+print("MAIN: all imports completed", flush=True)
 
 
 app = FastAPI(
