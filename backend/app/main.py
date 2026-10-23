@@ -1,4 +1,4 @@
-
+print("SecureDocs AI: main.py is loading", flush=True)
 import os
 
 from fastapi import FastAPI
