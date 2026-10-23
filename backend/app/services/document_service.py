@@ -9,9 +9,9 @@ from PIL import Image
 
 
 # Configure the Tesseract OCR executable for Windows.
-pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-)
+# pytesseract.pytesseract.tesseract_cmd = (
+#     r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+# )
 
 
 def extract_text_from_file(file_path: str, file_type: str) -> str:
